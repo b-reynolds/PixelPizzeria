@@ -79,6 +79,8 @@
     <ClInclude Include="Rat.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="resource1.h" />
+    <ClInclude Include="resource2.h" />
+    <ClInclude Include="resource3.h" />
     <ClInclude Include="Simulation.h" />
     <ClInclude Include="StarRating.h" />
     <ClInclude Include="Timer.h" />
@@ -93,7 +95,7 @@
     <ClInclude Include="WTRSpawn.h" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="PixelPizzas1.rc" />
+    <ResourceCompile Include="PixelPizzas.rc" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\..\..\Downloads\icon.ico" />
