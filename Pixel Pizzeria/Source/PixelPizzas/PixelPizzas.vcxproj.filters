@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Chef">
+      <UniqueIdentifier>{7fcf7928-e42d-42f7-9103-ad4e8f4b279f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Chef">
+      <UniqueIdentifier>{d707d2e1-8f50-4d5a-930f-27b5b265eeee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Customer">
+      <UniqueIdentifier>{8b64ae24-c9fa-479e-a5ff-32c9be8ee094}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Waiter">
+      <UniqueIdentifier>{dda7dc6a-dabf-4df4-bd1a-cda6c296db77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Waiter">
+      <UniqueIdentifier>{4feedec5-a59f-4c94-a5e9-655b62269835}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Path Finder">
+      <UniqueIdentifier>{4ad4de24-8c68-4f3e-bdc8-5829f3ee48dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Path Finder">
+      <UniqueIdentifier>{9575ed96-1836-47b4-b9ae-6c04dca37aed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\General">
+      <UniqueIdentifier>{82ecedf1-3d36-418c-92b4-4581c01bc8dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\General">
+      <UniqueIdentifier>{520c3dac-2c28-47b7-9759-6d83291c887d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Customer">
+      <UniqueIdentifier>{17dc4887-29b7-452a-8e12-e0cbe9479f17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Rat">
+      <UniqueIdentifier>{b185cb49-cb81-4094-bfa6-5d71feff622b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Rat">
+      <UniqueIdentifier>{972a5395-44c8-4392-84ed-7a88072ef215}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Customer.cpp">
+      <Filter>Source Files\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="Chef.cpp">
+      <Filter>Source Files\Chef</Filter>
+    </ClCompile>
+    <ClCompile Include="Waiter.cpp">
+      <Filter>Source Files\Waiter</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFinder.cpp">
+      <Filter>Source Files\Path Finder</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\Path Finder</Filter>
+    </ClCompile>
+    <ClCompile Include="Agent.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Map.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Order.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulation.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="CHFSpawn.cpp">
+      <Filter>Source Files\Chef</Filter>
+    </ClCompile>
+    <ClCompile Include="CHFCookOrder.cpp">
+      <Filter>Source Files\Chef</Filter>
+    </ClCompile>
+    <ClCompile Include="CUSEat.cpp">
+      <Filter>Source Files\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="CUSSit.cpp">
+      <Filter>Source Files\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="CUSLeave.cpp">
+      <Filter>Source Files\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="CUSSpawn.cpp">
+      <Filter>Source Files\Customer</Filter>
+    </ClCompile>
+    <ClCompile Include="WTRDeliverOrder.cpp">
+      <Filter>Source Files\Waiter</Filter>
+    </ClCompile>
+    <ClCompile Include="WTRCollectOrder.cpp">
+      <Filter>Source Files\Waiter</Filter>
+    </ClCompile>
+    <ClCompile Include="WTRTakeOrder.cpp">
+      <Filter>Source Files\Waiter</Filter>
+    </ClCompile>
+    <ClCompile Include="WTRIdle.cpp">
+      <Filter>Source Files\Waiter</Filter>
+    </ClCompile>
+    <ClCompile Include="WTRServeOrder.cpp">
+      <Filter>Source Files\Waiter</Filter>
+    </ClCompile>
+    <ClCompile Include="WTRSpawn.cpp">
+      <Filter>Source Files\Waiter</Filter>
+    </ClCompile>
+    <ClCompile Include="CHFServeOrder.cpp">
+      <Filter>Source Files\Chef</Filter>
+    </ClCompile>
+    <ClCompile Include="AgentInfoPanel.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="CHFCollectOrder.cpp">
+      <Filter>Source Files\Chef</Filter>
+    </ClCompile>
+    <ClCompile Include="Name.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Random.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="StarRating.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugUtil.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Colours.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="Rat.cpp">
+      <Filter>Source Files\Rat</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Chef.h">
+      <Filter>Header Files\Chef</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Header Files\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="Waiter.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFinder.h">
+      <Filter>Header Files\Path Finder</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
+      <Filter>Header Files\Path Finder</Filter>
+    </ClInclude>
+    <ClInclude Include="Agent.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Map.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Order.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulation.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="CHFSpawn.h">
+      <Filter>Header Files\Chef</Filter>
+    </ClInclude>
+    <ClInclude Include="CHFCookOrder.h">
+      <Filter>Header Files\Chef</Filter>
+    </ClInclude>
+    <ClInclude Include="CHFState.h">
+      <Filter>Header Files\Chef</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSEat.h">
+      <Filter>Header Files\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSSit.h">
+      <Filter>Header Files\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSLeave.h">
+      <Filter>Header Files\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSSpawn.h">
+      <Filter>Header Files\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="CUSState.h">
+      <Filter>Header Files\Customer</Filter>
+    </ClInclude>
+    <ClInclude Include="WTRState.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="WTRDeliverOrder.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="WTRCollectOrder.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="WTRTakeOrder.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="WTRIdle.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="WTRServeOrder.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="WTRSpawn.h">
+      <Filter>Header Files\Waiter</Filter>
+    </ClInclude>
+    <ClInclude Include="CHFServeOrder.h">
+      <Filter>Header Files\Chef</Filter>
+    </ClInclude>
+    <ClInclude Include="AgentInfoPanel.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="CHFCollectOrder.h">
+      <Filter>Header Files\Chef</Filter>
+    </ClInclude>
+    <ClInclude Include="Random.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Name.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugUtil.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Colours.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="StarRating.h">
+      <Filter>Header Files\General</Filter>
+    </ClInclude>
+    <ClInclude Include="Rat.h">
+      <Filter>Header Files\Rat</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="PixelPizzas1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Downloads\icon.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
