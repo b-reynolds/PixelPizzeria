@@ -94,12 +94,6 @@
     <ClInclude Include="WTRServeOrder.h" />
     <ClInclude Include="WTRSpawn.h" />
   </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="PixelPizzas.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="..\..\..\..\..\Downloads\icon.ico" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{ca0a435d-27b7-477a-ae77-2c7f81b9064d}</ProjectGuid>
     <RootNamespace>PixelPizzas</RootNamespace>
