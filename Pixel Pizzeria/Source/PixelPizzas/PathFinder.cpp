@@ -31,16 +31,6 @@ std::vector<Node> PathFinder::getNeighbours(const Node &node, Map &map)
 	{
 		nodePos = sf::Vector2i(parentPos.x, parentPos.y - 1);
 		neighbours.push_back(Node(nodePos, map.isTraversable(nodePos), nullptr)); // North
-		//if (parentPos.x + 1 < mapSize.x)
-		//{
-		//	nodePos = sf::Vector2i(parentPos.x + 1, parentPos.y - 1);
-		//	neighbours.push_back(Node(nodePos, map.isTraversable(nodePos), nullptr)); // North East
-		//}
-		//if (parentPos.x - 1 >= 0)
-		//{
-		//	nodePos = sf::Vector2i(parentPos.x - 1, parentPos.y - 1);
-		//	neighbours.push_back(Node(nodePos, map.isTraversable(nodePos), nullptr)); // North West
-		//}
 	}
 
 	if (parentPos.x + 1 < mapSize.x)
@@ -59,16 +49,6 @@ std::vector<Node> PathFinder::getNeighbours(const Node &node, Map &map)
 	{
 		nodePos = sf::Vector2i(parentPos.x, parentPos.y + 1);
 		neighbours.push_back(Node(nodePos, map.isTraversable(nodePos), nullptr)); // South
-		//if (parentPos.x + 1 < mapSize.x)
-		//{
-		//	nodePos = sf::Vector2i(parentPos.x + 1, parentPos.y + 1);
-		//	neighbours.push_back(Node(nodePos, map.isTraversable(nodePos), nullptr)); // South East
-		//}
-		//if (parentPos.x - 1 >= 0)
-		//{
-		//	nodePos = sf::Vector2i(parentPos.x - 1, parentPos.y + 1);
-		//	neighbours.push_back(Node(nodePos, map.isTraversable(nodePos), nullptr)); // South West
-		//}
 	}
 
 	return neighbours;

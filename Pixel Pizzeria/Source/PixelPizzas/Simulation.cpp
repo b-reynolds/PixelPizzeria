@@ -33,12 +33,11 @@ void Simulation::update(sf::RenderWindow &window)
 				agents.push_back(chef);
 			}
 
-
+			// Cycle through all active agents to determine if and which one was clicked
 			for(auto& agent : agents)
 			{
 				if(agent != nullptr)
 				{
-					// TODO: Fix access violation error...
 					sf::FloatRect rectAgentBounds = agent->getGlobalBounds();
 					if (isPointWithinRect(mousePosition, rectAgentBounds))
 					{
@@ -48,6 +47,7 @@ void Simulation::update(sf::RenderWindow &window)
 					}
 				}
 			}
+			// No agent was selected
 			if(!agentWasSelected)
 			{
 				infoPanel.setAgent(nullptr);
@@ -55,6 +55,7 @@ void Simulation::update(sf::RenderWindow &window)
 		}
 	}
 
+	// If there is less than 14 customers in the shop and the spawn timer has elapsed (random period of time), spawn a new customer
 	if (customers.size() < 14 && tmrSpawner.hasElapsed())
 	{
 		Customer* t = new Customer();
@@ -64,9 +65,11 @@ void Simulation::update(sf::RenderWindow &window)
 	}
 	infoPanel.update();
 
+	// Update the customers
 	for(unsigned int i = 0; i < customers.size(); ++i)
 	{
 		customers[i]->update(map, rats);
+		// If a customer has left the shop and been flagged inactive, delete them from memory.
 		if(!customers[i]->isActive())
 		{
 			if(infoPanel.getAgent() == customers[i])
@@ -78,15 +81,19 @@ void Simulation::update(sf::RenderWindow &window)
 		}
 	}
 
+	// Update the waiters
 	for(auto& waiter : waiters)
 	{
 		waiter->update(map, customers, orders);
 	}
 
+	// Update the chefs
 	for (auto & chef : chefs)
 	{
 		chef->update(map, orders);
 	}
+
+	// Update the rats
 	for(auto & rat : rats)
 	{
 		rat->update();
@@ -95,6 +102,7 @@ void Simulation::update(sf::RenderWindow &window)
 
 void Simulation::draw(sf::RenderWindow& window)
 {
+	// Draw all of the game objects
 	window.draw(sprBackground);
 	for (auto & rat : rats)
 	{

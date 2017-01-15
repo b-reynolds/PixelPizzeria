@@ -1,3 +1,8 @@
+// ----------------------------------------------------------------------------------------------------------------------------------------
+// I apologize for the lack of commenting throughout the project. I have tried to dig back through the files and add some comments
+// and now realizethe importance of writing them when the logic is fresh in mind and understood. In future I will make sure to comment regularly.
+// ----------------------------------------------------------------------------------------------------------------------------------------
+
 #include <SFML/Graphics.hpp>
 #include "Simulation.h"
 #include "DebugUtil.h"
@@ -16,6 +21,7 @@ sf::Color getRandomColour()
 
 int main()
 {
+	// Hide the console window
 	HWND hWnd = GetConsoleWindow();
 	ShowWindow(hWnd, SW_HIDE);
 
@@ -42,6 +48,7 @@ int main()
 
 		window.display();
 
+		// Store the delta time
 		deltaTime = deltaClock.restart().asSeconds();
 	}
 
